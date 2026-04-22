@@ -46,11 +46,11 @@ $outputHtmlPath = Resolve-RepoPath $OutputHtml
 $null = New-Item -ItemType Directory -Force -Path ([System.IO.Path]::GetDirectoryName($outputJsonPath))
 
 $rawJson = Get-Content -Raw -Path $sourceJsonPath
-$report = $rawJson | ConvertFrom-Json -Depth 100
+$report = $rawJson | ConvertFrom-Json
 
 Set-IfPresent $report.meta 'hostname' 'PUBLIC-SAMPLE-DEVICE'
 Set-IfPresent $report.meta 'scanDate' '2026-04-22T12:00:00Z'
-Set-IfPresent $report.meta 'scriptVersion' 'v10.0-public-sample'
+Set-IfPresent $report.meta 'scriptVersion' 'public-sample'
 
 if ($null -ne $report.meta.operatingSystem) {
     Set-IfPresent $report.meta.operatingSystem 'build' '26100'

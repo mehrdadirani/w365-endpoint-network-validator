@@ -13,7 +13,7 @@ A PowerShell-based readiness tool for validating Windows 365, Azure Virtual Desk
 
 Windows 365 readiness checks are often split across documentation, one-off scripts, and manual interpretation. This project packages those checks into a single PowerShell workflow that validates endpoint reachability and produces a reviewable browser-based report.
 
-The main artifact is [Test-W365-Endpoints-v10.ps1](./Test-W365-Endpoints-v10.ps1).
+The main artifact is [Test-W365-Endpoints.ps1](./Test-W365-Endpoints.ps1).
 
 The script is designed to run directly on the target Windows device without requiring a separate web app or backend service.
 
@@ -43,7 +43,7 @@ Screenshots or a sanitized demo report can be added once the public artifact set
 
 ## Files
 
-- [Test-W365-Endpoints-v10.ps1](./Test-W365-Endpoints-v10.ps1): Main validator script and interactive report generator
+- [Test-W365-Endpoints.ps1](./Test-W365-Endpoints.ps1): Main validator script and interactive report generator
 - [Azure Network RTT Stats - April 2026/azure-rtt-reference-apr2026.json](./Azure%20Network%20RTT%20Stats%20-%20April%202026/azure-rtt-reference-apr2026.json): Azure region RTT reference data used by the report
 - [sample-output/W365-Results-sanitized-sample.html](./sample-output/W365-Results-sanitized-sample.html): Sanitized interactive sample report for previews and screenshots
 - [sample-output/W365-Results-sanitized-sample.json](./sample-output/W365-Results-sanitized-sample.json): Sanitized JSON sample matching the public report
@@ -62,7 +62,7 @@ The repository includes a sanitized sample HTML report and matching JSON payload
 ### Example
 
 ```powershell
-.\Test-W365-Endpoints-v10.ps1
+.\Test-W365-Endpoints.ps1
 ```
 
 Optional parameters in the script let you control output path, prompt suppression, browser launch behavior, timeout, and parallelism.

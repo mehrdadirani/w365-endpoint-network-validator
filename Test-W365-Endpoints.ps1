@@ -1,10 +1,10 @@
 ﻿#Requires -Version 5.1
 <#
 .SYNOPSIS
-  W365 Endpoint Network Validator v10.0
+  W365 Endpoint Network Validator
     Tests TCP connectivity to all Windows 365, AVD, and Intune endpoints
     and generates an interactive HTML report.
-  v10 adds: consolidated client-facing ownership so DNS, firewall,
+  Includes consolidated client-facing ownership so DNS, firewall,
   proxy, wildcard, and IP range issues roll up to the Infrastructure
   - Network/Firewall Team.
 
@@ -50,7 +50,7 @@
     [int]$MaxParallel = 12
   )
 
-  $ScriptVersion  = 'v10.0'
+  $ScriptVersion  = 'current'
 $ScriptName     = 'W365 Endpoint Network Validator'
 
 $StaticEndpointReviewDate = [datetime]'2026-04-16'
