@@ -739,6 +739,7 @@ window.addEventListener('DOMContentLoaded', () => {
   renderFirewall();
   updateTabBadges();
   bindKeyboardTabs();
+  applyInitialTab();
 });
 
 // ── HEADER ───────────────────────────────────────────────────────
@@ -1317,6 +1318,19 @@ function bindKeyboardTabs() {
     const button = document.querySelectorAll('#tabbar button')[index];
     if (id && button) showTab(id, button);
   });
+}
+
+function applyInitialTab() {
+  const requestedTab = new URLSearchParams(window.location.search).get('tab');
+  if (!requestedTab) return;
+
+  const button = Array.from(document.querySelectorAll('#tabbar button')).find(candidate =>
+    candidate.getAttribute('onclick')?.includes(`'${requestedTab}'`)
+  );
+
+  if (button && document.getElementById('tab-' + requestedTab)) {
+    showTab(requestedTab, button);
+  }
 }
 
 // ── FIREWALL RULES ────────────────────────────────────────────────

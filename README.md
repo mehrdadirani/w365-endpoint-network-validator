@@ -39,7 +39,19 @@ The report experience includes:
 - Drill-in tables for Windows 365, AVD, Intune, and client-side dependencies
 - Action-oriented output for firewall, wildcard, DNS, and TLS issues
 
-Screenshots or a sanitized demo report can be added once the public artifact set is finalized.
+Actual screenshots from the sanitized sample report are included below.
+
+Overview tab:
+
+![Overview tab](./sample-output/screenshots/overview-tab-live.png)
+
+Round Trip Times tab:
+
+![Round Trip Times tab](./sample-output/screenshots/rtt-tab-live.png)
+
+Readiness Signals tab:
+
+![Readiness Signals tab](./sample-output/screenshots/readiness-tab-live.png)
 
 ## Files
 
@@ -47,6 +59,7 @@ Screenshots or a sanitized demo report can be added once the public artifact set
 - [Azure Network RTT Stats - April 2026/azure-rtt-reference-apr2026.json](./Azure%20Network%20RTT%20Stats%20-%20April%202026/azure-rtt-reference-apr2026.json): Azure region RTT reference data used by the report
 - [sample-output/W365-Results-sanitized-sample.html](./sample-output/W365-Results-sanitized-sample.html): Sanitized interactive sample report for previews and screenshots
 - [sample-output/W365-Results-sanitized-sample.json](./sample-output/W365-Results-sanitized-sample.json): Sanitized JSON sample matching the public report
+- [sample-output/screenshots](./sample-output/screenshots): PNG screenshots captured from the sanitized sample report
 - [GITHUB_ABOUT.md](./GITHUB_ABOUT.md): Recommended GitHub description, website, and topics
 
 ## Sample Output
