@@ -14,6 +14,8 @@ Instead of stopping at raw connectivity output, it generates an interactive HTML
 
 The product goal was simple: keep execution lightweight with PowerShell, but make the reporting experience clearer, more actionable, and easier to share.
 
+Credit where it is due: the original Windows 365 endpoint validation idea and first script came from Shannon Fritz.
+
 Repo: https://github.com/<your-github-username>/w365-endpoint-network-validator
 
 ## Variant 2: Personal Builder
@@ -25,6 +27,8 @@ That is what I did with Windows 365 Endpoint Network Validator.
 It started as endpoint validation logic, but I kept working on the experience around it: clearer modes, better output, and a report that helps teams move from findings to action.
 
 Now it checks Windows 365, Azure Virtual Desktop, and Intune connectivity requirements and produces an interactive HTML report built for real operational use.
+
+The original Windows 365 endpoint validation idea and first script came from Shannon Fritz, and this version builds forward from that starting point.
 
 Sharing it as part of my builder portfolio.
 
@@ -46,5 +50,7 @@ Current capabilities:
 - Azure RTT reference data to support planning discussions
 
 The interesting part for me was not only the implementation. It was reducing friction, improving readability, and making the output useful across engineering, architecture, and remediation workflows.
+
+The original Windows 365 endpoint validation idea and first script came from Shannon Fritz, and this project builds on that foundation.
 
 Repo: https://github.com/<your-github-username>/w365-endpoint-network-validator

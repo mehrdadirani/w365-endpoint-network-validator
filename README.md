@@ -70,7 +70,9 @@ Optional parameters in the script let you control output path, prompt suppressio
 
 ## Attribution
 
-This project builds on the original Windows 365 endpoint validation work published by Shannon Fritz from Microsoft. The upstream attribution is preserved in the script header.
+This project builds on the original Windows 365 endpoint validation idea and first PowerShell script published by Shannon Fritz from Microsoft.
+
+The current repository extends that foundation with a different packaging approach, additional validation and reporting layers, and a public sample set, but credit for the original concept and starting script belongs to Shannon Fritz. The upstream attribution is also preserved in the script header.
 
 ## Positioning
 
