@@ -1,0 +1,10 @@
+W365-Results-*.html
+W365-Results-*.json
+W365-Retry-*.ps1
+
+# Keep local reruns and ad hoc outputs out of the public repo.
+*-validation-rerun/
+
+# Keep the curated public sample artifacts in version control.
+!sample-output/W365-Results-sanitized-sample.html
+!sample-output/W365-Results-sanitized-sample.json
