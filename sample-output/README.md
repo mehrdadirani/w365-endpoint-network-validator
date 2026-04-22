@@ -12,14 +12,4 @@ Included files:
 
 The sample preserves report structure, endpoint findings, and remediation framing while removing local machine names, private addresses, tenant-specific identifiers, and real network labels.
 
-Overview tab:
-
-![Overview tab](./screenshots/overview-tab-live.png)
-
-Round Trip Times tab:
-
-![Round Trip Times tab](./screenshots/rtt-tab-live.png)
-
-Readiness Signals tab:
-
-![Readiness Signals tab](./screenshots/readiness-tab-live.png)
+Use the HTML sample when you want to browse the report experience directly, the JSON sample when you want to inspect the underlying output structure, and the screenshot files when you want a quick static preview.

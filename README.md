@@ -2,34 +2,15 @@
 
 A PowerShell-based readiness tool for validating Windows 365, Azure Virtual Desktop, and Intune connectivity with a shareable HTML report.
 
-## At a Glance
+The main artifact is [Test-W365-Endpoints.ps1](./Test-W365-Endpoints.ps1). It runs directly on the target Windows device and produces a self-contained HTML report plus JSON output.
+
+## What It Does
 
 - Tests required Windows 365, Azure Virtual Desktop, and Intune endpoints from one script
 - Supports host network, client network, or combined validation modes
 - Generates a self-contained interactive HTML report and JSON sidecar
 - Surfaces firewall, DNS, TLS, wildcard, and IP-range findings in a practical operator view
-
-## Overview
-
-Windows 365 readiness checks are often split across documentation, one-off scripts, and manual interpretation. This project packages those checks into a single PowerShell workflow that validates endpoint reachability and produces a reviewable browser-based report.
-
-The main artifact is [Test-W365-Endpoints.ps1](./Test-W365-Endpoints.ps1).
-
-The script is designed to run directly on the target Windows device without requiring a separate web app or backend service.
-
-## Why It Matters
-
-- Speeds up Windows 365 and AVD network readiness assessments
-- Produces output that network, endpoint, and architecture teams can review together
-- Turns raw connectivity checks into actionable remediation guidance
-
-## Feature Highlights
-
-- Single-file PowerShell entry point with no deployment overhead
-- Host, client, and combined validation modes for different testing contexts
-- Interactive HTML report with tabs, KPIs, filtering, and detailed endpoint results
-- JSON sidecar output for comparison, automation, or downstream processing
-- Azure RTT reference integration to support Cloud PC planning conversations
+- Adds Azure RTT reference data to support Cloud PC planning and review conversations
 
 ## Preview
 
@@ -57,10 +38,7 @@ Readiness Signals tab:
 
 - [Test-W365-Endpoints.ps1](./Test-W365-Endpoints.ps1): Main validator script and interactive report generator
 - [Azure Network RTT Stats - April 2026/azure-rtt-reference-apr2026.json](./Azure%20Network%20RTT%20Stats%20-%20April%202026/azure-rtt-reference-apr2026.json): Azure region RTT reference data used by the report
-- [sample-output/W365-Results-sanitized-sample.html](./sample-output/W365-Results-sanitized-sample.html): Sanitized interactive sample report for previews and screenshots
-- [sample-output/W365-Results-sanitized-sample.json](./sample-output/W365-Results-sanitized-sample.json): Sanitized JSON sample matching the public report
-- [sample-output/screenshots](./sample-output/screenshots): PNG screenshots captured from the sanitized sample report
-- [GITHUB_ABOUT.md](./GITHUB_ABOUT.md): Recommended GitHub description, website, and topics
+- [sample-output](./sample-output/README.md): Sanitized sample HTML, matching JSON, and preview screenshots for browsing the report experience
 
 ## Sample Output
 
@@ -84,8 +62,4 @@ Optional parameters in the script let you control output path, prompt suppressio
 
 This project builds on the original Windows 365 endpoint validation idea and first PowerShell script published by Shannon Fritz from Microsoft.
 
-The current repository extends that foundation with a different packaging approach, additional validation and reporting layers, and a public sample set, but credit for the original concept and starting script belongs to Shannon Fritz. The upstream attribution is also preserved in the script header.
-
-## Positioning
-
-This project is best suited for engineers, architects, and administrators who need a concrete way to validate Windows 365 connectivity requirements and produce a usable output for remediation planning.
+This repository extends that foundation with a different packaging approach, additional validation and reporting layers, and a public sample set. Credit for the original concept and starting script belongs to Shannon Fritz, and the upstream attribution is also preserved in the script header.
