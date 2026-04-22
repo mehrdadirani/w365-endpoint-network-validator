@@ -48,7 +48,6 @@ Screenshots or a sanitized demo report can be added once the public artifact set
 - [sample-output/W365-Results-sanitized-sample.html](./sample-output/W365-Results-sanitized-sample.html): Sanitized interactive sample report for previews and screenshots
 - [sample-output/W365-Results-sanitized-sample.json](./sample-output/W365-Results-sanitized-sample.json): Sanitized JSON sample matching the public report
 - [GITHUB_ABOUT.md](./GITHUB_ABOUT.md): Recommended GitHub description, website, and topics
-- [LINKEDIN_POSTS.md](./LINKEDIN_POSTS.md): Draft launch posts for sharing the project publicly
 
 ## Sample Output
 
