@@ -4,6 +4,14 @@ A PowerShell-based readiness tool for validating Windows 365, Azure Virtual Desk
 
 The main artifact is [Test-W365-Endpoints.ps1](./Test-W365-Endpoints.ps1). It runs directly on the target Windows device and produces a self-contained HTML report plus JSON output.
 
+## Live Demo
+
+Start here if you want to preview the sanitized sample report immediately:
+
+- Direct hosted sample report: https://mehrdadirani.github.io/w365-endpoint-network-validator/sample-output/W365-Results-sanitized-sample.html
+
+If you prefer to run it locally, open `sample-output/W365-Results-sanitized-sample.html` directly from the repository or generate a fresh report with the PowerShell script.
+
 ## What It Does
 
 - Tests required Windows 365, Azure Virtual Desktop, and Intune endpoints from one script
